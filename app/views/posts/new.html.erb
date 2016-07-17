@@ -1,0 +1,52 @@
+<% @page_title = "New Post" %>
+
+
+<div class="side_left post_new">
+	<h1>New Post</h1>
+	</div>
+
+<div class="side_right new_form">
+<%= form_for(@post) do |f| %>
+
+<p class ="field">
+<%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
+</p>
+
+<p class ="field">
+
+
+<%= f.text_field :author, :placeholder => "Author" %>
+</p>
+
+<p class ="field">
+
+<%= f.text_field :title, :placeholder => "Title"  %>
+</p>
+
+
+<p class ="field">
+
+<%= f.text_field :color, :placeholder => "Color"  %>
+</p>
+
+<p class ="field">
+
+<%= f.text_area :summary,  :class => 'textarea_new', :placeholder => "Summary" %>
+</p>
+
+<p class ="field">
+
+<%= f.text_area :content, :class => "textarea_main", :placeholder => "Write your post here" %>
+</p>
+
+
+<p class ="field">
+
+	<%= f.submit :class => "buttoner" %>
+</p>
+
+<% end %>
+
+</div>	
+
+

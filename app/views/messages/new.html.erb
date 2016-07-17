@@ -1,0 +1,30 @@
+<%= @page_title = "Say Hello!" %>
+
+<div class="side_left contact">
+  <h1></h1>
+  </div>
+
+
+<div class="side_right contact_form">
+  <h2 class="contact_head">Say Hello...</h2>
+    <%= form_for @message, url: contact_path do |message_form| %>
+    <div class="field">
+      <%= message_form.text_field :name, placeholder: "Name" %>
+    </div>
+    
+    <div class="field">
+      <%= message_form.email_field :email, placeholder: "Email"%>
+    </div>
+    
+    <div class="field">
+      <%= message_form.text_area :content, placeholder: "Message"%>
+    </div>
+  
+    <div class="field">
+      <%= message_form.submit "Send", :class => 'buttoner' %>
+    </div>
+
+<% end %>
+
+
+</div>

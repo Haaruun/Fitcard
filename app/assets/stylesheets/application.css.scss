@@ -1,0 +1,529 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require social-share-button
+ *= require sweet-alert
+ *= require_self
+ */
+
+@import "social-share-button";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+$darkred: #27ae60; 
+$lightred: #2ecc71;
+
+
+
+.social-share-button-facebook {
+    background-color: #1A237E;
+	background-image: none;
+	width: 100% !important;
+    height: 100% !important;
+    	margin: 0 !important;
+    	    	padding: 0 !important;
+	width: 25% !important;
+	float: left;
+	height: 50px !important;
+	line-height: 50px !important;
+}
+
+.social-share-button .social-share-button-facebook::before {
+	content:  "Facebook";
+    font-style: normal;
+    font-weight: thin;
+    text-decoration: inherit;
+    color: white;
+}
+
+.social-share-button .social-share-button-tumblr{
+    background-color: #2c3e50;
+    width: 100% !important;
+    height: 100% !important;
+    	background-image: none;
+    		margin: 0 !important;
+    		    	padding: 0 !important;
+    		    		width: 25% !important;
+    		    		float: left;
+	height: 50px !important;
+		line-height: 50px !important;
+
+
+}
+
+.social-share-button .social-share-button-tumblr::before{
+      content:  "Tumblr";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+}
+
+
+.social-share-button .social-share-button-twitter{
+    background-color: #42A5F5;
+background-image: none;
+	width: 100% !important;
+    height: 100% !important;
+    	margin: 0 !important;
+    	padding: 0 !important;
+    		width: 25% !important;
+    		float: left;
+	height: 50px !important;
+	line-height: 50px !important;
+
+}
+
+.social-share-button .social-share-button-twitter::before{
+    content:  "Twitter";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+
+}
+
+.social-share-button .social-share-button-google_plus{
+    background-color: #CF000F;
+background-image: none;
+	width: 100% !important;
+    height: 100% !important;
+    	margin: 0 !important;
+    	padding: 0 !important;
+    		width: 25% !important;
+    		float: left;
+	height: 50px !important;
+	line-height: 50px !important;
+
+}
+
+.social-share-button .social-share-button-google_plus::before{
+    content:  "Google+";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: white;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+	overflow-x: hidden !important;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 200;
+    color: #212121;
+    background: #ecf0f1;
+}
+
+
+a{
+	font-size: 16px !important;
+	text-decoration: none !important;
+}
+
+
+	i{
+    font-size: 30px !important;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    color: white !important;
+    -webkit-transition: 0.5s ease all;
+	-moz-transition: 0.5s ease all;
+	-ms-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+	opacity: 1;
+
+    &:hover{
+-webkit-transition: 0.5s ease all;
+	-moz-transition: 0.5s ease all;
+	-ms-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+	opacity: 0.5;
+    }
+}
+
+
+button{
+	font-size: 16px !important;
+	&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+
+input{
+	font-size: 16px !important;
+		&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+
+textarea{
+	font-size: 16px !important;
+		&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+
+p{
+	font-size: 14px;
+	line-height: 28px;
+		margin: 14px 0 0 0;
+			&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+
+h1{
+	font-size: 67px;
+	line-height: 67px;
+	margin: 67px 0 0 0;
+		&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+
+h2{
+font-size: 41px;
+line-height: 41px;
+margin: 41px 0 0 0;	
+	&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+
+h3{
+font-size: 25px;
+line-height: 25px;
+margin: 25px 0 0 0;	
+	&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+
+i{
+	font-size: 21px;
+	padding-right: 10px;
+		&::selection{
+	background-color: $lightred;
+	color: white !important;
+}
+	&::-moz-selection{
+	background-color: $lightred;
+	color: white !important;
+}
+}
+}
+
+.side_left{
+	float: left;
+	width: 50vw;
+	height: 100vh;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.side_right{
+	float: right;
+	width: 50vw;
+	height: 100%;
+}
+
+
+
+.ham{
+	border: 6.5px solid $darkred;
+		-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+	transform: rotate(360deg);
+}
+.hamburger{
+background-color: $lightred;
+text-decoration: none;
+position: fixed;
+text-align: center;
+top: 0;
+right: 0;
+z-index: 9999;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+line-height: 50px;
+margin-right: 10px;
+margin-top: 10px;
+cursor: pointer;
+-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+	// box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+	&:hover{
+			transform: rotate(180deg);
+		-webkit-transition: 0.5s ease all;
+	-moz-transition: 0.5s ease all;
+	-ms-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+	}
+
+
+
+
+
+div{
+	top: 11.5px;
+	margin: 4.5px auto;
+	width: 20px;
+	height: 2.5px;
+	background-color: white;
+	position: relative;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+	
+}
+
+.one{
+	transform: rotate(-45deg);
+	right: 5px;
+}
+
+.three{
+	transform: rotate(45deg);
+	right: 5px;
+}
+
+.two{
+	position: relative;
+}
+
+}
+
+.menu{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	background-color: $lightred;
+	z-index: 1000;
+	text-align: center;
+	color: white;
+-webkit-transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+   -moz-transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+     -o-transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+        transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+
+h1 a{
+font-size: 67px !important;
+	line-height: 167px !important;
+	margin: 67px 0 0 0 !important;
+	text-decoration: none;
+	color: white !important;
+	&:hover{
+		border: 10px solid $darkred;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transition: 0.5s ease all;
+	-moz-transition: 0.5s ease all;
+	-ms-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+	}
+}	
+}
+
+.menu_slide{
+	left: 0;
+-webkit-transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+   -moz-transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+     -o-transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+        transition: all 500ms cubic-bezier(0.965, 0.240, 1.000, 0.810); 
+}
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+
+
+@media screen and (max-width: 1100px){
+	a{
+	font-size: 16px !important;
+	color: #212121 !important;
+}
+
+
+	i{
+    font-size: 20px !important;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+button{
+	font-size: 12px !important;
+}
+
+input{
+	font-size: 12px !important;
+}
+
+textarea{
+	font-size: 12px !important;
+}
+
+p{
+	font-size: 12px;
+	line-height: 24px;
+		margin: 12px 0 0 0;
+}
+
+h1{
+	font-size: 47px;
+	line-height: 47px;
+	margin: 47px 0 0 0;
+}
+
+h2{
+font-size: 31px;
+line-height: 31px;
+margin: 31px 0 0 0;	
+}
+
+h3{
+font-size: 20px;
+line-height: 20px;
+margin: 20px 0 0 0;	
+
+}
+}
+
+
+@media screen and (max-width: 1000px){
+	.side_left{
+	width: 100vw;
+	position: relative;
+	height: 50vh;
+}
+
+.side_right{
+	width: 100vw;
+}
+
+}
+
+
+// @media screen and (max-width: 600px){
+// a{
+// 	font-size: 12px !important;
+// 	color: #212121 !important;
+// }
+
+
+// 	i{
+//     font-size: 16px !important;
+//     margin-left: 25px;
+//     margin-right: 25px;
+//     margin-top: 10px;
+// }
+
+
+// button{
+// 	font-size: 10px !important;
+// }
+
+// input{
+// 	font-size: 10px !important;
+// }
+
+// textarea{
+// 	font-size: 10px !important;
+// }
+
+// p{
+// 	font-size: 10px;
+// 	line-height: 16px;
+// 		margin: 10px 0 0 0;
+// }
+
+// h1{
+// 	font-size: 37px;
+// 	line-height: 37px;
+// 	margin: 37px 0 0 0;
+// }
+
+// h2{
+// font-size: 21px;
+// line-height: 21px;
+// margin: 21px 0 0 0;	
+// }
+
+// h3{
+// font-size: 15px;
+// line-height: 15px;
+// margin: 15px 0 0 0;	
+
+// }
+
+// }

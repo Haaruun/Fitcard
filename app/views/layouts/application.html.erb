@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>	
+  <title>I'm Haaruun | <%= @page_title || "Hey!" %></title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <%= favicon_link_tag 'favicon.ico' %>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="hamburger">
+		<div class ="ham_one"></div>
+		<div class ="ham_two"></div>
+		<div class ="ham_three"></div>
+	</div>
+
+
+	<div class="menu">
+		<h1><%= link_to("Home", {:controller => 'home', :action => 'index'}) %></h1>
+		<h1><%= link_to("Blog", {:controller => 'posts', :action => 'index'}) %> </h1>
+		<h1><%= link_to("Contact", {:controller => 'messages', :action => 'new'}) %> </h1>
+	</div>
+
+<div class="wrapper">
+	<%= yield %>
+
+</div>
+
+</body>
+</html>

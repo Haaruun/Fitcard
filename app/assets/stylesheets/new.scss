@@ -1,0 +1,185 @@
+$darkred: #27ae60; 
+$lightred: #2ecc71;
+
+.post_new{
+	background-image: url('https://images.unsplash.com/photo-1415604934674-561df9abf539?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=9931159ea0695271997f7c552f946394');
+	background-size: cover;
+  background-position: -150px 0;
+  position: absolute; 
+  left: 50%;
+
+
+	h1{
+		color: #212121 !important;
+		font-size: 70px;
+		margin: 70px 0 0 0;
+		margin: 200px auto;
+		width: 70%;
+		background-color: $darkred;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		padding: 25px;
+    z-index: 1000;
+    position: relative;
+}
+
+}
+
+
+  .post_new::after{
+  content: "";
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 100;  
+      background-color: $darkred; 
+        -webkit-filter: brightness(0.5);
+
+}
+
+	.new_form{
+
+
+form{
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 5px;
+
+.field{
+  margin: 35px;
+}
+
+  input{
+  margin: 0 75px;
+  width: 30%;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $lightred;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $lightred 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  &:focus::-webkit-input-placeholder{
+      color: $lightred;
+      font-size: 11px;
+      transform: translateY(-30px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+    }
+}
+
+
+.buttoner {
+  margin: 0 auto;
+  border: none;
+  background: $lightred;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 35%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  &:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+  }
+}
+}
+textarea{
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 3px $lightred;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $lightred 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+textarea:focus::-webkit-input-placeholder{
+    text-align: left !important;
+      color: $lightred;
+      font-size: 11px;
+      transform: translateY(-10px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+        text-align: center;
+
+    
+
+} 
+
+textarea:focus, input:focus{
+    outline: none;
+}
+textarea{
+  resize: none;
+
+}
+
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 45%;
+ font-size: 18px;
+  color: $lightred;
+  border: none;
+  border: 2px solid $lightred;
+}
+
+/* Remove focus */
+select:focus {
+  outline: none}
+
+/* Hide label */
+.mdl-selectfield label {display: none;}
+/* Use custom arrow */
+.mdl-selectfield select {appearance: none}
+.mdl-selectfield {
+  position: relative;
+    &:after {
+        position: absolute;
+        top: 0.75em;
+        right: 0.5em;
+        /* Styling the down arrow */
+        width: 0;
+        height: 0;
+        padding: 0;
+        content: '';
+        border-left: .25em solid transparent;
+        border-right: .25em solid transparent;
+        pointer-events: none;
+    }
+}
+}
+@media screen and (max-width: 1000px){
+  .post_new{
+    background-position: 0 0;
+
+  h1{
+    font-size: 30px;
+    margin: 30px 0 0 0;
+    margin: 125px auto;
+    width: 50%;
+    padding: 15px;
+}
+
+}
+}

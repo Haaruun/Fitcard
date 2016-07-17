@@ -1,0 +1,53 @@
+<% @page_title = "Edit Post" %>
+
+
+<div class="side_left post_edit">
+	<h1>Edit Post: </h1>
+	<h3>"<%= @post.title %>"</h3>
+	</div>
+
+<div class="side_right edit_form">
+<%= form_for(@post) do |f| %>
+
+<p class ="field">
+<%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
+</p>
+
+<p class ="field">
+
+
+<%= f.text_field :author, :placeholder => "Author" %>
+</p>
+
+<p class ="field">
+
+<%= f.text_field :title, :placeholder => "Title"  %>
+</p>
+
+
+<p class ="field">
+
+<%= f.text_field :color, :placeholder => "Color"  %>
+</p>
+
+<p class ="field">
+
+<%= f.text_area :summary,  :class => 'textarea_new', :placeholder => "Summary" %>
+</p>
+
+<p class ="field">
+
+<%= f.text_area :content, :class => "textarea_main", :placeholder => "Write your post here" %>
+</p>
+
+
+<p class ="field">
+
+	<%= f.submit :class => "buttoner" %>
+</p>
+
+<% end %>
+
+</div>	
+
+

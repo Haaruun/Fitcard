@@ -1,0 +1,49 @@
+<% @page_title = "Blog" %>
+
+
+<div class="side_left post_index">
+	<h1></h1>
+	</div>
+
+
+
+<div class="side_right">
+<% if current_admin %>
+<p class="add_new"><%= link_to "+", new_post_path %></p>
+<% end %>
+
+<div class="side_right_contain">
+	
+
+<% @posts.each do |post| %>
+<main>
+<div class="side_right_box">
+<%= link_to post.title, post%>
+</div>	
+
+<div class="side_content">
+<p>
+<%= truncate post.summary, length: 60 %></p>
+</div>
+
+
+ <div class ="edit_destroy">
+<% if current_admin %>
+<p>
+<%= link_to "✍", edit_post_path(post) %>
+<span> | </span>
+<%= link_to "✕", post, method: :delete, data: {confirm: 'Are you sure?'} %>
+</p>
+<% else %>
+<p><%= post.created_at.strftime("%B %d") %></p>	
+<% end %>
+
+</div>	 	
+</main>
+
+	
+
+
+<% end %>
+</div>
+</div>

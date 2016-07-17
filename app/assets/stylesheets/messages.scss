@@ -1,0 +1,146 @@
+$darkred: #27ae60; 
+$lightred: #2ecc71;
+
+.contact{
+  background-image: url('https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300');
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  h1{
+    color: white !important;
+    font-size: 100px;
+    margin: 100px 0 0 0;
+    line-height: 400px;
+
+}
+
+h1::after{
+  content: "Contact";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 300;  
+
+}
+
+}
+
+.contact::after{
+  content: "";
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 100;  
+      background-color: $darkred; 
+        -webkit-filter: brightness(0.35);
+
+}
+
+
+
+.contact_form{
+h2{
+  margin: 0 auto;
+  background-color: $lightred;
+  text-align: center;
+  width: 70%;
+  padding: 25px;
+  color: white;
+}
+form{
+  margin: 0 auto;
+  width: 90%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 5px;
+
+.field{
+  margin: 35px;
+}
+
+  input{
+  margin: 0 75px;
+  width: 35%;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $lightred;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $lightred 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  &:focus::-webkit-input-placeholder{
+      color: $lightred;
+      font-size: 11px;
+      transform: translateY(-30px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+    }
+}
+
+
+.buttoner {
+  margin: 0 auto;
+  border: none;
+  background: $lightred;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 35%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  &:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+  }
+}
+}
+textarea{
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 3px $lightred;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $lightred 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+textarea:focus::-webkit-input-placeholder{
+    text-align: left !important;
+      color: $lightred;
+      font-size: 11px;
+      transform: translateY(-10px);
+      visibility: visible !important;
+      transition: 0.2s ease all;
+        text-align: center;
+
+    
+
+} 
+
+textarea:focus, input:focus{
+    outline: none;
+}
+textarea{
+  resize: none;
+
+}
+}

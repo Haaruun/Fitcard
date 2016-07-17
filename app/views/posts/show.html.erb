@@ -1,0 +1,95 @@
+<% @page_title = @post.title %>
+
+<style>
+	.post_show{
+		background-color: <%= @post.color %>;
+  /*  background-image: url('https://images.unsplash.com/photo-1447727214830-cbcbf097b52c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=eb84c0ba41989ac189270e798bbd5d55');
+    background-size: cover;*/
+	}
+
+  .post_show::after{
+ /* content: "";
+      opacity: 0.95;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 10;  
+      background-color: <%= @post.color %>; 
+        -webkit-filter: brightness(0.5);*/
+
+}
+</style>
+
+
+
+<div class="side_left post_show">
+  <div class="show_contain">
+    <h1 class ="show_title"><%= @post.title %> </h1>
+<h3 class ="show_title">Category: <%= @post.category.name %></h3>
+
+<div class="social_section show_title">
+  <%= social_share_button_tag(@post.title) %>
+</div>
+  </div>
+<div class="next_prev">
+  <% if @post.id == 1 %>
+    <div class ="change backward"><%= link_to("✕", {:controller => 'posts', :action => 'index'}) %> </div>
+  <% else %>
+    <div class ="change backward"><%= link_to "<", @post.previous %> </div>
+
+
+      <% end %>
+      <div class="change forward"><%= link_to ">", @post.next %></div>
+
+</div>
+
+</div>
+
+
+
+<div class="side_right">
+
+<main class="main_content">
+  <h4><%= @post.created_at.strftime("%B %d, %Y") %></h4>
+	<p><%= @post.content %></p>
+</main>
+
+
+<div class="comments">
+
+  <h2>Comments</h2>
+
+<p>
+  <% @post.comments.each do |comment| %>
+  <p>
+    <div class="comment_display">
+    <h4> -> <%= comment.name%> </h4>
+    <p><%= comment.created_at.strftime("%B %d, %Y")%> </p>
+    <p> <%= comment.body %> </p>
+    </div>
+  </p>
+  <% end %>
+</p>
+
+
+<div class="show_form">
+  
+<%= form_for([@post, @post.comments.build ]) do |f| %>
+
+<p> <%= f.text_field :name, placeholder: "Name" %> </p>
+
+<p> <%= f.text_area :body, rows: 5, cols: 30, :placeholder => "Comment", :class => 'textarea'%> </p>
+
+<p> <%= f.submit 'Post Comment', :class => "buttoner" %> </p>
+
+<% end %>	
+</div>
+
+</div>
+
+
+
+
+	</div>

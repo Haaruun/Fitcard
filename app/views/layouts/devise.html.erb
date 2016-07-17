@@ -1,0 +1,90 @@
+<style>
+	input:hover label{
+	color: green;
+	}
+
+	body{
+	font-family: lato;	
+	background-color: #ecf0f1;
+	}
+
+	a{
+		display: none;
+	}
+
+	.field:nth-of-type(3){
+	display: none;
+	}
+	
+
+	div{
+		padding-top: 30px;
+	}
+
+
+	form {
+  box-sizing: border-box;
+  width: 350px;
+  margin: 0px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.field > label{
+	top: 40px;
+	left: 70px;
+	position: relative;
+}
+
+input {
+	outline: none;
+  margin: 40px 70px;
+  width: 200px;
+  display: block;
+  font-size: 15px;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px tomato;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: darken(tomato, 20%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: tomato;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+}
+
+ 
+
+.actions > input{
+		border-bottom: none;
+		font-family: lato;
+		font-size: 15px;
+		background-color: tomato;
+
+
+	}
+	h2{
+		font-size: 4em;
+		background-color: tomato;
+		margin: 20 auto;
+		width: 15%;
+		text-align: center;
+		color: white;
+		  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+
+	}
+</style>
+<%= yield %>

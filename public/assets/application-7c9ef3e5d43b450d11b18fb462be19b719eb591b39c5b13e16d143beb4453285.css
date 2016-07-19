@@ -1,0 +1,3061 @@
+/* line 4, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.post_edit {
+  background-image: url("https://images.unsplash.com/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=d523476a1cfd5997a3ed452c05cd514c");
+  background-size: cover;
+  background-position: -100px 0;
+  position: absolute;
+  left: 50%;
+}
+/* line 11, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.post_edit h1 {
+  color: #212121 !important;
+  font-size: 70px;
+  margin: 70px 0 0 0;
+  margin: 200px auto;
+  width: 70%;
+  background-color: #27ae60;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 25px;
+  z-index: 1000;
+  position: relative;
+}
+/* line 23, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.post_edit h3 {
+  color: white !important;
+  font-size: 30px;
+  margin: 30px 0 0 0;
+  margin: -125px auto;
+  width: 60%;
+  background-color: #27ae60;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 25px;
+  z-index: 1000;
+  position: relative;
+}
+
+/* line 38, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.post_edit::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: #27ae60;
+  -webkit-filter: brightness(0.5);
+}
+
+/* line 52, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form {
+  /* Remove focus */
+  /* Hide label */
+  /* Use custom arrow */
+}
+/* line 55, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 5px;
+}
+/* line 63, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form .field {
+  margin: 35px;
+}
+/* line 67, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form input {
+  margin: 0 75px;
+  width: 30%;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #2ecc71;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2ecc71 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 80, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form input:focus, .edit_form form input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+/* line 85, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form input:focus::-webkit-input-placeholder {
+  color: #2ecc71;
+  font-size: 11px;
+  transform: translateY(-30px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+}
+/* line 95, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form .buttoner {
+  margin: 0 auto;
+  border: none;
+  background: #2ecc71;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 35%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 105, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form form .buttoner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 111, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form textarea {
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 3px #2ecc71;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2ecc71 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 126, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form textarea:focus::-webkit-input-placeholder {
+  text-align: left !important;
+  color: #2ecc71;
+  font-size: 11px;
+  transform: translateY(-10px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+  text-align: center;
+}
+/* line 139, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form textarea:focus, .edit_form input:focus {
+  outline: none;
+}
+/* line 142, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form textarea {
+  resize: none;
+}
+/* line 147, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 45%;
+  font-size: 18px;
+  color: #2ecc71;
+  border: none;
+  border: 2px solid #2ecc71;
+}
+/* line 158, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form select:focus {
+  outline: none;
+}
+/* line 162, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form .mdl-selectfield label {
+  display: none;
+}
+/* line 164, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form .mdl-selectfield select {
+  appearance: none;
+}
+/* line 165, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form .mdl-selectfield {
+  position: relative;
+}
+/* line 167, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+.edit_form .mdl-selectfield:after {
+  position: absolute;
+  top: 0.75em;
+  right: 0.5em;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 184, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+  .post_edit {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  /* line 188, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+  .post_edit h1 {
+    font-size: 30px;
+    margin: 30px 0 0 0;
+    margin: 125px auto;
+    width: 50%;
+    padding: 15px;
+    position: relative;
+  }
+  /* line 196, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/edit.scss */
+  .post_edit h3 {
+    color: white !important;
+    font-size: 15px;
+    margin: 15px 0 0 0;
+    margin: -90px auto;
+    width: 50%;
+    background-color: #27ae60;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 15px;
+    position: relative;
+  }
+}
+/* line 1, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.home_banner {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+/* line 8, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.bg_img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1427384906349-30452365b5e8?dpr=1&auto=format&crop=entropy&fit=crop&w=1280&h=960&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 15, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.bg_img::after {
+  content: "";
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.65;
+  background-color: black;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+}
+/* line 27, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.bg_img h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 50px;
+  position: absolute;
+  color: white;
+  z-index: 100;
+  transform: translateY(105%);
+}
+/* line 38, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.bg_img span {
+  color: lime !important;
+}
+
+/* line 43, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.wrappper {
+  margin: 0 auto;
+  max-width: 1150px;
+  /*    background-color: darkgrey;*/
+  display: -webkit-flex;
+  /*
+      flex-direction: row;
+      flex-wrap: wrap;
+  */
+  flex-flow: row wrap;
+}
+
+/* line 61, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.info_item {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  min-width: 250px;
+}
+/* line 67, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.info_item h3 {
+  text-align: center;
+}
+
+/* line 73, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals {
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 1150px;
+}
+/* line 79, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals h3 {
+  text-align: center;
+  font-size: 1.65em;
+  margin: 0 0 30px;
+}
+/* line 85, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals div {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 90, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+/* line 100, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals a:nth-of-type(2n) {
+  margin-right: 0;
+}
+@media screen and (min-width: 50em) {
+  /* line 105, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+  .hotdeals a {
+    width: calc(25% - 6px);
+  }
+  /* line 109, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+  .hotdeals a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  /* line 113, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+  .hotdeals a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+/* line 118, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals a:hover img {
+  transform: scale(1.15);
+}
+/* line 122, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals figure {
+  margin: 0;
+  overflow: hidden;
+}
+/* line 127, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals figcaption {
+  margin-top: 15px;
+}
+/* line 131, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+/* line 140, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals .p a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+/* line 148, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+.hotdeals .p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 159, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+  .bg_img h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 171, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/home.scss */
+  .bg_img h1 {
+    font-size: 25px;
+  }
+}
+/* line 4, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact {
+  background-image: url("https://images.unsplash.com/photo-1429051781835-9f2c0a9df6e4?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300");
+  background-size: cover;
+  position: relative;
+  margin: 0;
+}
+/* line 9, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact h1 {
+  color: white !important;
+  font-size: 100px;
+  margin: 100px 0 0 0;
+  line-height: 400px;
+}
+/* line 17, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact h1::after {
+  content: "Contact";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 300;
+}
+
+/* line 30, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: #27ae60;
+  -webkit-filter: brightness(0.35);
+}
+
+/* line 47, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form h2 {
+  margin: 0 auto;
+  background-color: #2ecc71;
+  text-align: center;
+  width: 70%;
+  padding: 25px;
+  color: white;
+}
+/* line 55, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form {
+  margin: 0 auto;
+  width: 90%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 5px;
+}
+/* line 63, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form .field {
+  margin: 35px;
+}
+/* line 67, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form input {
+  margin: 0 75px;
+  width: 35%;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #2ecc71;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2ecc71 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 80, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form input:focus, .contact_form form input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+/* line 85, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form input:focus::-webkit-input-placeholder {
+  color: #2ecc71;
+  font-size: 11px;
+  transform: translateY(-30px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+}
+/* line 95, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form .buttoner {
+  margin: 0 auto;
+  border: none;
+  background: #2ecc71;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 35%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 105, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form form .buttoner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 111, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form textarea {
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 3px #2ecc71;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2ecc71 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 126, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form textarea:focus::-webkit-input-placeholder {
+  text-align: left !important;
+  color: #2ecc71;
+  font-size: 11px;
+  transform: translateY(-10px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+  text-align: center;
+}
+/* line 139, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form textarea:focus, .contact_form input:focus {
+  outline: none;
+}
+/* line 142, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/messages.scss */
+.contact_form textarea {
+  resize: none;
+}
+/* line 4, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.post_new {
+  background-image: url("https://images.unsplash.com/photo-1415604934674-561df9abf539?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=9931159ea0695271997f7c552f946394");
+  background-size: cover;
+  background-position: -150px 0;
+  position: absolute;
+  left: 50%;
+}
+/* line 12, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.post_new h1 {
+  color: #212121 !important;
+  font-size: 70px;
+  margin: 70px 0 0 0;
+  margin: 200px auto;
+  width: 70%;
+  background-color: #27ae60;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 25px;
+  z-index: 1000;
+  position: relative;
+}
+
+/* line 28, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.post_new::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: #27ae60;
+  -webkit-filter: brightness(0.5);
+}
+
+/* line 42, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form {
+  /* Remove focus */
+  /* Hide label */
+  /* Use custom arrow */
+}
+/* line 45, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 5px;
+}
+/* line 53, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form .field {
+  margin: 35px;
+}
+/* line 57, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form input {
+  margin: 0 75px;
+  width: 30%;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #2ecc71;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2ecc71 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 70, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form input:focus, .new_form form input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+/* line 75, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form input:focus::-webkit-input-placeholder {
+  color: #2ecc71;
+  font-size: 11px;
+  transform: translateY(-30px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+}
+/* line 85, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form .buttoner {
+  margin: 0 auto;
+  border: none;
+  background: #2ecc71;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 35%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 95, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form form .buttoner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 101, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form textarea {
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 3px #2ecc71;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2ecc71 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 116, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form textarea:focus::-webkit-input-placeholder {
+  text-align: left !important;
+  color: #2ecc71;
+  font-size: 11px;
+  transform: translateY(-10px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+  text-align: center;
+}
+/* line 129, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form textarea:focus, .new_form input:focus {
+  outline: none;
+}
+/* line 132, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form textarea {
+  resize: none;
+}
+/* line 137, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 45%;
+  font-size: 18px;
+  color: #2ecc71;
+  border: none;
+  border: 2px solid #2ecc71;
+}
+/* line 148, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form select:focus {
+  outline: none;
+}
+/* line 152, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form .mdl-selectfield label {
+  display: none;
+}
+/* line 154, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form .mdl-selectfield select {
+  appearance: none;
+}
+/* line 155, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form .mdl-selectfield {
+  position: relative;
+}
+/* line 157, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+.new_form .mdl-selectfield:after {
+  position: absolute;
+  top: 0.75em;
+  right: 0.5em;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 173, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+  .post_new {
+    background-position: 0 0;
+  }
+  /* line 176, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/new.scss */
+  .post_new h1 {
+    font-size: 30px;
+    margin: 30px 0 0 0;
+    margin: 125px auto;
+    width: 50%;
+    padding: 15px;
+  }
+}
+/* line 4, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.post_index {
+  background-image: url("https://images.unsplash.com/photo-1434596922112-19c563067271?dpr=1&auto=format&crop=entropy&fit=crop&w=1280&h=854&q=80");
+  background-size: cover;
+  height: 100%;
+}
+/* line 9, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.post_index h1 {
+  color: white !important;
+  font-size: 70px !important;
+  margin: 200px auto;
+  width: 70%;
+  height: 110px;
+  line-height: 100px;
+  background-color: #27ae60;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 1000;
+  position: relative;
+}
+/* line 23, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.post_index h1::after {
+  content: "Blog";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 300;
+}
+
+/* line 36, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.post_index::after {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: #2ecc71;
+  -webkit-filter: brightness(0.5);
+}
+
+/* line 51, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.add_new {
+  padding: 20px;
+  background-color: #27ae60;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 0;
+  color: white;
+  text-align: center;
+}
+/* line 62, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.add_new a {
+  font-size: 40px !important;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 70, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_right_contain {
+  margin: 60px auto;
+  width: 95%;
+  height: auto;
+  text-align: center;
+}
+/* line 78, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_right_contain main {
+  height: 100px;
+  transform: scale(1, 1);
+  cursor: pointer;
+  margin-top: 1px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: 0.25s ease all;
+  -moz-transition: 0.25s ease all;
+  -ms-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+/* line 89, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_right_contain main:hover {
+  transform: scale(1.005, 1.005);
+  margin-bottom: 5px;
+  -webkit-transition: 0.25s ease all;
+  -moz-transition: 0.25s ease all;
+  -ms-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 101, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_right_box {
+  float: left;
+  width: 35%;
+  height: 100px;
+  line-height: 100px;
+  background: #27ae60 !important;
+}
+/* line 108, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_right_box a {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+/* line 116, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_content {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+/* line 120, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.side_content p {
+  padding: 5px;
+}
+
+/* line 126, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.edit_destroy {
+  width: 20%;
+  float: right;
+  background-color: #212121;
+  height: 100%;
+  text-align: center;
+}
+/* line 132, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.edit_destroy p {
+  color: white !important;
+  line-height: 75px;
+}
+/* line 136, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.edit_destroy span {
+  padding: 10px;
+}
+/* line 140, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+.edit_destroy a {
+  color: white !important;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 148, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+  .post_index h1 {
+    font-size: 30px !important;
+    margin: 115px auto;
+    width: 50%;
+    height: 65px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 160, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/post.scss */
+  .side_right_box a {
+    color: white !important;
+    font-size: 10px !important;
+  }
+}
+/* line 5, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.side_right .main_content {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 10px auto;
+  width: 90%;
+  padding: 25px;
+  text-align: center;
+}
+/* line 12, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.side_right .main_content p {
+  text-indent: 100px;
+  text-align: left;
+}
+/* line 16, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.side_right .main_content p::first-letter {
+  font-size: 41px;
+  line-height: 41px;
+  margin: 41px 0 0 0;
+  color: #d14848;
+}
+/* line 23, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.side_right .main_content h4 {
+  border-bottom: 2px solid #c73330;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  width: 25%;
+}
+
+/* line 32, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.post_show {
+  position: absolute;
+  left: 50%;
+}
+/* line 36, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.post_show .show_contain {
+  margin: 150px auto;
+  width: 90%;
+  position: relative;
+  z-index: 1000;
+}
+/* line 42, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.post_show .show_contain .show_title {
+  margin-top: 50px;
+}
+/* line 49, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.post_show h1 {
+  color: white;
+  background-color: #d14848;
+  font-size: 60px;
+  line-height: 60px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 57, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.post_show .social_section {
+  color: #212121;
+  padding: 15px;
+  height: 100px;
+}
+/* line 64, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.post_show h3 {
+  color: white;
+  background-color: #d14848;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 77, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.next_prev {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  z-index: 1000;
+}
+/* line 86, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.next_prev .change {
+  background: #212121;
+  float: left;
+  width: 50%;
+  clear: both;
+  height: 65px;
+  line-height: 65px;
+  margin-bottom: 5px;
+}
+/* line 95, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.next_prev .change a {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+/* line 103, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments {
+  margin: 0 auto;
+  width: 90%;
+  padding: 15px;
+}
+/* line 107, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .show_form {
+  margin: 0 auto;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 15px;
+}
+/* line 114, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .show_form .textarea {
+  width: 70%;
+  margin: 0 auto;
+  height: 150px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 3px #c73330;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #c73330 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 129, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .show_form .textarea:focus::-webkit-input-placeholder {
+  text-align: left !important;
+  color: #c73330;
+  font-size: 11px;
+  transform: translateY(-10px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+  text-align: center;
+}
+/* line 145, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments h2 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  width: 85%;
+  background-color: #c73330;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 156, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .comment_display {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 0 auto;
+  width: 85%;
+}
+/* line 162, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .comment_display h4 {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 169, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .comment_display p {
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 179, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .comments {
+  font-size: 2.5em;
+  color: white;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #c73330;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* line 190, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments input {
+  margin: 0 75px;
+  width: 35%;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #c73330;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #c73330 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #212121;
+}
+/* line 203, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments input:focus, .comments input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+/* line 208, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments input:focus::-webkit-input-placeholder {
+  color: #c73330;
+  font-size: 11px;
+  transform: translateY(-30px);
+  visibility: visible !important;
+  transition: 0.2s ease all;
+}
+/* line 218, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .buttoner {
+  margin: 0 auto;
+  border: none;
+  background: #c73330;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 35%;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 228, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+.comments .buttoner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 236, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+textarea:focus, input:focus {
+  outline: none;
+}
+
+/* line 239, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+textarea {
+  resize: none;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 259, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .post_show .show_contain {
+    margin: 30px auto;
+  }
+  /* line 261, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .post_show .show_contain .show_title {
+    margin-top: 20px;
+  }
+  /* line 267, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .post_show h1 {
+    font-size: 30px;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  /* line 275, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .post_show h3 {
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 306, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .social-share-button .social-share-button-facebook::before {
+    content: "\f09a" !important;
+    font-family: FontAwesome;
+  }
+
+  /* line 311, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .social-share-button .social-share-button-tumblr::before {
+    content: "\f173" !important;
+    font-family: FontAwesome;
+  }
+
+  /* line 317, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .social-share-button .social-share-button-twitter::before {
+    content: "\f099" !important;
+    font-family: FontAwesome;
+  }
+
+  /* line 322, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/show.scss */
+  .social-share-button .social-share-button-google_plus::before {
+    content: "\f0d5" !important;
+    font-family: FontAwesome;
+  }
+}
+/* line 4, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-twitter {
+  background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-facebook {
+  background-image: url(/assets/social-share-button/facebook-03210e1663ee772e93ed5d344cdb36657b68342821aaebe982f2f984915990b3.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_bookmark {
+  background-image: url(/assets/social-share-button/google_bookmark-bb4c960c0421cb7dce602d10e744692bcc1c54f323410f4965d508f96e2255ce.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_plus {
+  background-image: url(/assets/social-share-button/google_plus-50c049fbb29cd3346f1bf9349017b644bcd00a53b56bd156728850f57bd85c0a.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-weibo {
+  background-image: url(/assets/social-share-button/weibo-a345a6ca554e6f388da9eb35746bb0425cb018c16408ba82852c66d375245d6f.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-qq {
+  background-image: url(/assets/social-share-button/qq-4dbae8223fc7823f6d73bc7fbe113eb894f4c174ec3ae93103ca382c78a2bf67.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-delicious {
+  background-image: url(/assets/social-share-button/delicious-0c55f72f821aae5352691f13eb64bf3435573e2169d0720477ed367b2f1ed28e.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-linkedin {
+  background-image: url(/assets/social-share-button/linkedin-b7fd42895b291003c444a9c2acf867ea813671e0b725a5d7c05dbb13f5c0fdd3.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-tumblr {
+  background-image: url(/assets/social-share-button/tumblr-330a37f93cce7c27a750188d0bfdbed3a22f566b807e64d21131dcdc94e08ec3.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-pinterest {
+  background-image: url(/assets/social-share-button/pinterest-86203d156197cce4087fee058b920d275c535df5fd59d8caa83da0ef41d1ec7f.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-douban {
+  background-image: url(/assets/social-share-button/douban-46298c27e3bc6d59951c0bbc464339a5ba1b44e3b25b571874f1baacd7af2495.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-weichat {
+  background-image: url(/assets/social-share-button/weichat-cd8e5072379de9a1f95ce9d2b6d1d723aa953ccc81b337fb77cb435e8fb96016.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-email {
+  background-image: url(/assets/social-share-button/email-7067143cbe69d9d8cf25e67fda1a315d133c2b79074a09088bd712cc5c81135d.svg);
+}
+/* line 1, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+body.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 5, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-overlay {
+  background-color: black;
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  /* IE8 */
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 10000;
+}
+
+/* line 19, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert {
+  background-color: white;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 478px;
+  padding: 17px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -256px;
+  margin-top: -200px;
+  overflow: hidden;
+  display: none;
+  z-index: 99999;
+}
+
+@media all and (max-width: 540px) {
+  /* line 35, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+  .sweet-alert {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    left: 15px;
+    right: 15px;
+  }
+}
+/* line 41, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert h2 {
+  color: #575757;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: none;
+  position: relative;
+  margin: 25px 0;
+  padding: 0;
+  line-height: 40px;
+  display: block;
+}
+
+/* line 52, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert p {
+  color: #797979;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  text-align: inherit;
+  float: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+/* line 63, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert fieldset {
+  border: none;
+  position: relative;
+}
+
+/* line 66, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-error-container {
+  background-color: #f1f1f1;
+  margin-left: -17px;
+  margin-right: -17px;
+  overflow: hidden;
+  padding: 0 10px;
+  max-height: 0;
+  webkit-transition: padding 0.15s, max-height 0.15s;
+  transition: padding 0.15s, max-height 0.15s;
+}
+
+/* line 75, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-error-container.show {
+  padding: 10px 0;
+  max-height: 100px;
+  webkit-transition: padding 0.2s, max-height 0.2s;
+  transition: padding 0.25s, max-height 0.25s;
+}
+
+/* line 80, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-error-container .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ea7d7d;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 3px;
+}
+
+/* line 90, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-error-container p {
+  display: inline-block;
+}
+
+/* line 92, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-input-error {
+  position: absolute;
+  top: 29px;
+  right: 26px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+/* line 105, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-input-error::before, .sweet-alert .sa-input-error::after {
+  content: "";
+  width: 20px;
+  height: 6px;
+  background-color: #f06e57;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  left: 50%;
+  margin-left: -9px;
+}
+
+/* line 116, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-input-error::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 119, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-input-error::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 122, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-input-error.show {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 126, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #d7d7d7;
+  height: 43px;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.06);
+  padding: 0 12px;
+  display: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 140, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px #c4e6f5;
+  border: 1px solid #b4dbed;
+}
+
+/* line 144, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input:focus::-moz-placeholder {
+  transition: opacity 0.3s 0.03s ease;
+  opacity: 0.5;
+}
+
+/* line 147, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input:focus:-ms-input-placeholder {
+  transition: opacity 0.3s 0.03s ease;
+  opacity: 0.5;
+}
+
+/* line 150, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input:focus::-webkit-input-placeholder {
+  transition: opacity 0.3s 0.03s ease;
+  opacity: 0.5;
+}
+
+/* line 153, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input::-moz-placeholder {
+  color: #bdbdbd;
+}
+
+/* line 155, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+/* line 157, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert input::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+
+/* line 159, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert.show-input input {
+  display: block;
+}
+
+/* line 161, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-confirm-button-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 164, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .la-ball-fall {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -27px;
+  margin-top: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 172, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button {
+  background-color: #8CD4F5;
+  color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-border-radius: 4px;
+  border-radius: 5px;
+  padding: 10px 32px;
+  margin: 26px 5px 0 5px;
+  cursor: pointer;
+}
+
+/* line 184, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgba(128, 179, 235, 0.5), inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 187, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button:hover {
+  background-color: #7ecff4;
+}
+
+/* line 189, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button:active {
+  background-color: #5dc2f1;
+}
+
+/* line 191, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button.cancel {
+  background-color: #C1C1C1;
+}
+
+/* line 193, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button.cancel:hover {
+  background-color: #b9b9b9;
+}
+
+/* line 195, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button.cancel:active {
+  background-color: #a8a8a8;
+}
+
+/* line 197, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button.cancel:focus {
+  box-shadow: rgba(197, 205, 211, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.04706) 0px 0px 0px 1px inset !important;
+}
+
+/* line 199, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button[disabled] {
+  opacity: .6;
+  cursor: default;
+}
+
+/* line 202, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button.confirm[disabled] {
+  color: transparent;
+}
+
+/* line 204, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button.confirm[disabled] ~ .la-ball-fall {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+/* line 208, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert button::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 210, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert[data-has-cancel-button=false] button {
+  box-shadow: none !important;
+}
+
+/* line 212, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert[data-has-confirm-button=false][data-has-cancel-button=false] {
+  padding-bottom: 40px;
+}
+
+/* line 214, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon {
+  width: 80px;
+  height: 80px;
+  border: 4px solid gray;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border-radius: 50%;
+  margin: 20px auto;
+  padding: 0;
+  position: relative;
+  box-sizing: content-box;
+}
+
+/* line 225, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error {
+  border-color: #F27474;
+}
+
+/* line 227, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error .sa-x-mark {
+  position: relative;
+  display: block;
+}
+
+/* line 230, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error .sa-line {
+  position: absolute;
+  height: 5px;
+  width: 47px;
+  background-color: #F27474;
+  display: block;
+  top: 37px;
+  border-radius: 2px;
+}
+
+/* line 238, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error .sa-line.sa-left {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 17px;
+}
+
+/* line 242, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error .sa-line.sa-right {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 16px;
+}
+
+/* line 246, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-warning {
+  border-color: #F8BB86;
+}
+
+/* line 248, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-warning .sa-body {
+  position: absolute;
+  width: 5px;
+  height: 47px;
+  left: 50%;
+  top: 10px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-left: -2px;
+  background-color: #F8BB86;
+}
+
+/* line 258, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-warning .sa-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: -3px;
+  left: 50%;
+  bottom: 10px;
+  background-color: #F8BB86;
+}
+
+/* line 268, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-info {
+  border-color: #C9DAE1;
+}
+
+/* line 270, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-info::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 29px;
+  left: 50%;
+  bottom: 17px;
+  border-radius: 2px;
+  margin-left: -2px;
+  background-color: #C9DAE1;
+}
+
+/* line 280, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-info::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: -3px;
+  top: 19px;
+  background-color: #C9DAE1;
+}
+
+/* line 289, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success {
+  border-color: #A5DC86;
+}
+
+/* line 291, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success::before, .sweet-alert .sa-icon.sa-success::after {
+  content: '';
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 120px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 302, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success::before {
+  -webkit-border-radius: 120px 0 0 120px;
+  border-radius: 120px 0 0 120px;
+  top: -7px;
+  left: -33px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 60px 60px;
+  transform-origin: 60px 60px;
+}
+
+/* line 311, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success::after {
+  -webkit-border-radius: 0 120px 120px 0;
+  border-radius: 0 120px 120px 0;
+  top: -11px;
+  left: 30px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0px 60px;
+  transform-origin: 0px 60px;
+}
+
+/* line 320, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-placeholder {
+  width: 80px;
+  height: 80px;
+  border: 4px solid rgba(165, 220, 134, 0.2);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  z-index: 2;
+}
+
+/* line 332, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-fix {
+  width: 5px;
+  height: 90px;
+  background-color: white;
+  position: absolute;
+  left: 28px;
+  top: 8px;
+  z-index: 1;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 342, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-line {
+  height: 5px;
+  background-color: #A5DC86;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 349, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-line.sa-tip {
+  width: 25px;
+  left: 14px;
+  top: 46px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 355, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-line.sa-long {
+  width: 47px;
+  right: 8px;
+  top: 38px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 361, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-custom {
+  background-size: contain;
+  border-radius: 0;
+  border: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*
+ * Animations
+ */
+@-webkit-keyframes showSweetAlert {
+  0% {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+  45% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes showSweetAlert {
+  0% {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+  45% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+@keyframes hideSweetAlert {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+@-webkit-keyframes slideFromTop {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes slideFromTop {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@-webkit-keyframes slideToTop {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes slideToTop {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@-webkit-keyframes slideFromBottom {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes slideFromBottom {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@-webkit-keyframes slideToBottom {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+@keyframes slideToBottom {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+/* line 463, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.showSweetAlert[data-animation=pop] {
+  -webkit-animation: showSweetAlert 0.3s;
+  animation: showSweetAlert 0.3s;
+}
+
+/* line 467, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.showSweetAlert[data-animation=none] {
+  -webkit-animation: none;
+  animation: none;
+}
+
+/* line 471, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.showSweetAlert[data-animation=slide-from-top] {
+  -webkit-animation: slideFromTop 0.3s;
+  animation: slideFromTop 0.3s;
+}
+
+/* line 475, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.showSweetAlert[data-animation=slide-from-bottom] {
+  -webkit-animation: slideFromBottom 0.3s;
+  animation: slideFromBottom 0.3s;
+}
+
+/* line 479, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.hideSweetAlert[data-animation=pop] {
+  -webkit-animation: hideSweetAlert 0.2s;
+  animation: hideSweetAlert 0.2s;
+}
+
+/* line 483, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.hideSweetAlert[data-animation=none] {
+  -webkit-animation: none;
+  animation: none;
+}
+
+/* line 487, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.hideSweetAlert[data-animation=slide-from-top] {
+  -webkit-animation: slideToTop 0.4s;
+  animation: slideToTop 0.4s;
+}
+
+/* line 491, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.hideSweetAlert[data-animation=slide-from-bottom] {
+  -webkit-animation: slideToBottom 0.3s;
+  animation: slideToBottom 0.3s;
+}
+
+@-webkit-keyframes animateSuccessTip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+@keyframes animateSuccessTip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+@-webkit-keyframes animateSuccessLong {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+@keyframes animateSuccessLong {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+@-webkit-keyframes rotatePlaceholder {
+  0% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+  }
+}
+@keyframes rotatePlaceholder {
+  0% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+  }
+}
+/* line 603, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.animateSuccessTip {
+  -webkit-animation: animateSuccessTip 0.75s;
+  animation: animateSuccessTip 0.75s;
+}
+
+/* line 607, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.animateSuccessLong {
+  -webkit-animation: animateSuccessLong 0.75s;
+  animation: animateSuccessLong 0.75s;
+}
+
+/* line 611, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sa-icon.sa-success.animate::after {
+  -webkit-animation: rotatePlaceholder 4.25s ease-in;
+  animation: rotatePlaceholder 4.25s ease-in;
+}
+
+@-webkit-keyframes animateErrorIcon {
+  0% {
+    transform: rotateX(100deg);
+    -webkit-transform: rotateX(100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes animateErrorIcon {
+  0% {
+    transform: rotateX(100deg);
+    -webkit-transform: rotateX(100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+/* line 635, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.animateErrorIcon {
+  -webkit-animation: animateErrorIcon 0.5s;
+  animation: animateErrorIcon 0.5s;
+}
+
+@-webkit-keyframes animateXMark {
+  0% {
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    margin-top: -6px;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animateXMark {
+  0% {
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    margin-top: 26px;
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    margin-top: -6px;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+/* line 681, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.animateXMark {
+  -webkit-animation: animateXMark 0.5s;
+  animation: animateXMark 0.5s;
+}
+
+@-webkit-keyframes pulseWarning {
+  0% {
+    border-color: #F8D486;
+  }
+  100% {
+    border-color: #F8BB86;
+  }
+}
+@keyframes pulseWarning {
+  0% {
+    border-color: #F8D486;
+  }
+  100% {
+    border-color: #F8BB86;
+  }
+}
+/* line 697, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.pulseWarning {
+  -webkit-animation: pulseWarning 0.75s infinite alternate;
+  animation: pulseWarning 0.75s infinite alternate;
+}
+
+@-webkit-keyframes pulseWarningIns {
+  0% {
+    background-color: #F8D486;
+  }
+  100% {
+    background-color: #F8BB86;
+  }
+}
+@keyframes pulseWarningIns {
+  0% {
+    background-color: #F8D486;
+  }
+  100% {
+    background-color: #F8BB86;
+  }
+}
+/* line 713, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.pulseWarningIns {
+  -webkit-animation: pulseWarningIns 0.75s infinite alternate;
+  animation: pulseWarningIns 0.75s infinite alternate;
+}
+
+@-webkit-keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Internet Explorer 9 has some special quirks that are fixed here */
+/* The icons are not animated. */
+/* This file is automatically merged into sweet-alert.min.js through Gulp */
+/* Error icon */
+/* line 733, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error .sa-line.sa-left {
+  -ms-transform: rotate(45deg) \9;
+}
+
+/* line 736, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-error .sa-line.sa-right {
+  -ms-transform: rotate(-45deg) \9;
+}
+
+/* Success icon */
+/* line 740, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success {
+  border-color: transparent\9;
+}
+
+/* line 743, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-line.sa-tip {
+  -ms-transform: rotate(45deg) \9;
+}
+
+/* line 746, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.sweet-alert .sa-icon.sa-success .sa-line.sa-long {
+  -ms-transform: rotate(-45deg) \9;
+}
+
+/*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+/* line 754, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall,
+.la-ball-fall > div {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 761, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall {
+  display: block;
+  font-size: 0;
+  color: #fff;
+}
+
+/* line 766, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-dark {
+  color: #333;
+}
+
+/* line 769, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall > div {
+  display: inline-block;
+  float: none;
+  background-color: currentColor;
+  border: 0 solid currentColor;
+}
+
+/* line 775, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall {
+  width: 54px;
+  height: 18px;
+}
+
+/* line 779, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall > div {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: ball-fall 1s ease-in-out infinite;
+  -moz-animation: ball-fall 1s ease-in-out infinite;
+  -o-animation: ball-fall 1s ease-in-out infinite;
+  animation: ball-fall 1s ease-in-out infinite;
+}
+
+/* line 790, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall > div:nth-child(1) {
+  -webkit-animation-delay: -200ms;
+  -moz-animation-delay: -200ms;
+  -o-animation-delay: -200ms;
+  animation-delay: -200ms;
+}
+
+/* line 796, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall > div:nth-child(2) {
+  -webkit-animation-delay: -100ms;
+  -moz-animation-delay: -100ms;
+  -o-animation-delay: -100ms;
+  animation-delay: -100ms;
+}
+
+/* line 802, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall > div:nth-child(3) {
+  -webkit-animation-delay: 0ms;
+  -moz-animation-delay: 0ms;
+  -o-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+/* line 808, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-sm {
+  width: 26px;
+  height: 8px;
+}
+
+/* line 812, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-sm > div {
+  width: 4px;
+  height: 4px;
+  margin: 2px;
+}
+
+/* line 817, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-2x {
+  width: 108px;
+  height: 36px;
+}
+
+/* line 821, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-2x > div {
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+}
+
+/* line 826, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-3x {
+  width: 162px;
+  height: 54px;
+}
+
+/* line 830, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sweet-alert-0.0.9/app/assets/stylesheets/sweet-alert/sweet-alert.scss */
+.la-ball-fall.la-3x > div {
+  width: 30px;
+  height: 30px;
+  margin: 12px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+@-moz-keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+@-o-keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -o-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+@keyframes ball-fall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-145%);
+    -moz-transform: translateY(-145%);
+    -o-transform: translateY(-145%);
+    transform: translateY(-145%);
+  }
+  10% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(145%);
+    -moz-transform: translateY(145%);
+    -o-transform: translateY(145%);
+    transform: translateY(145%);
+  }
+}
+/*
+
+*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* line 4, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-twitter {
+  background-image: url(/assets/social-share-button/twitter-7b64ce0117a85c5d52ed45c27707af61d9b0e0d590284baa287cfe87867b9ae1.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-facebook {
+  background-image: url(/assets/social-share-button/facebook-03210e1663ee772e93ed5d344cdb36657b68342821aaebe982f2f984915990b3.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_bookmark {
+  background-image: url(/assets/social-share-button/google_bookmark-bb4c960c0421cb7dce602d10e744692bcc1c54f323410f4965d508f96e2255ce.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-google_plus {
+  background-image: url(/assets/social-share-button/google_plus-50c049fbb29cd3346f1bf9349017b644bcd00a53b56bd156728850f57bd85c0a.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-weibo {
+  background-image: url(/assets/social-share-button/weibo-a345a6ca554e6f388da9eb35746bb0425cb018c16408ba82852c66d375245d6f.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-qq {
+  background-image: url(/assets/social-share-button/qq-4dbae8223fc7823f6d73bc7fbe113eb894f4c174ec3ae93103ca382c78a2bf67.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-delicious {
+  background-image: url(/assets/social-share-button/delicious-0c55f72f821aae5352691f13eb64bf3435573e2169d0720477ed367b2f1ed28e.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-linkedin {
+  background-image: url(/assets/social-share-button/linkedin-b7fd42895b291003c444a9c2acf867ea813671e0b725a5d7c05dbb13f5c0fdd3.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-tumblr {
+  background-image: url(/assets/social-share-button/tumblr-330a37f93cce7c27a750188d0bfdbed3a22f566b807e64d21131dcdc94e08ec3.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-pinterest {
+  background-image: url(/assets/social-share-button/pinterest-86203d156197cce4087fee058b920d275c535df5fd59d8caa83da0ef41d1ec7f.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-douban {
+  background-image: url(/assets/social-share-button/douban-46298c27e3bc6d59951c0bbc464339a5ba1b44e3b25b571874f1baacd7af2495.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-weichat {
+  background-image: url(/assets/social-share-button/weichat-cd8e5072379de9a1f95ce9d2b6d1d723aa953ccc81b337fb77cb435e8fb96016.svg);
+}
+/* line 15, /Users/haaruun/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/social-share-button-0.3.1/app/assets/stylesheets/social-share-button.scss */
+.social-share-button .ssb-email {
+  background-image: url(/assets/social-share-button/email-7067143cbe69d9d8cf25e67fda1a315d133c2b79074a09088bd712cc5c81135d.svg);
+}
+
+/* line 30, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button-facebook {
+  background-color: #1A237E;
+  background-image: none;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 25% !important;
+  float: left;
+  height: 50px !important;
+  line-height: 50px !important;
+}
+
+/* line 43, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-facebook::before {
+  content: "Facebook";
+  font-style: normal;
+  font-weight: thin;
+  text-decoration: inherit;
+  color: white;
+}
+
+/* line 51, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-tumblr {
+  background-color: #2c3e50;
+  width: 100% !important;
+  height: 100% !important;
+  background-image: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 25% !important;
+  float: left;
+  height: 50px !important;
+  line-height: 50px !important;
+}
+
+/* line 66, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-tumblr::before {
+  content: "Tumblr";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: white;
+}
+
+/* line 75, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-twitter {
+  background-color: #42A5F5;
+  background-image: none;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 25% !important;
+  float: left;
+  height: 50px !important;
+  line-height: 50px !important;
+}
+
+/* line 89, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-twitter::before {
+  content: "Twitter";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: white;
+}
+
+/* line 98, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-google_plus {
+  background-color: #CF000F;
+  background-image: none;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 25% !important;
+  float: left;
+  height: 50px !important;
+  line-height: 50px !important;
+}
+
+/* line 112, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.social-share-button .social-share-button-google_plus::before {
+  content: "Google+";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: white;
+}
+
+/* line 121, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* line 127, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+body {
+  overflow-x: hidden !important;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 200;
+  color: #212121;
+  background: #ecf0f1;
+}
+
+/* line 137, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+a {
+  font-size: 16px !important;
+  text-decoration: none !important;
+}
+
+/* line 143, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+i {
+  font-size: 30px !important;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  color: white !important;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  opacity: 1;
+}
+/* line 155, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+i:hover {
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  opacity: 0.5;
+}
+
+/* line 165, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+button {
+  font-size: 16px !important;
+}
+/* line 167, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+button::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 171, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+button::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 177, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+input {
+  font-size: 16px !important;
+}
+/* line 179, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+input::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 183, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+input::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 189, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+textarea {
+  font-size: 16px !important;
+}
+/* line 191, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+textarea::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 195, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+textarea::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 201, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+p {
+  font-size: 14px;
+  line-height: 28px;
+  margin: 14px 0 0 0;
+}
+/* line 205, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+p::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 209, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+p::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 215, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-size: 67px;
+  line-height: 67px;
+  margin: 67px 0 0 0;
+}
+/* line 219, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h1::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 223, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h1::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 229, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h2 {
+  font-size: 41px;
+  line-height: 41px;
+  margin: 41px 0 0 0;
+}
+/* line 233, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h2::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 237, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h2::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 243, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h3 {
+  font-size: 25px;
+  line-height: 25px;
+  margin: 25px 0 0 0;
+}
+/* line 247, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h3::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 251, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h3::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 256, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h3 i {
+  font-size: 21px;
+  padding-right: 10px;
+}
+/* line 259, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h3 i::selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+/* line 263, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+h3 i::-moz-selection {
+  background-color: #2ecc71;
+  color: white !important;
+}
+
+/* line 270, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.side_left {
+  float: left;
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 280, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.side_right {
+  float: right;
+  width: 50vw;
+  height: 100%;
+}
+
+/* line 288, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.ham {
+  border: 6.5px solid #27ae60;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  transform: rotate(360deg);
+}
+
+/* line 296, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.hamburger {
+  background-color: #2ecc71;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+/* line 317, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.hamburger:hover {
+  transform: rotate(180deg);
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+/* line 329, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.hamburger div {
+  top: 11.5px;
+  margin: 4.5px auto;
+  width: 20px;
+  height: 2.5px;
+  background-color: white;
+  position: relative;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+/* line 343, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.hamburger .one {
+  transform: rotate(-45deg);
+  right: 5px;
+}
+/* line 348, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.hamburger .three {
+  transform: rotate(45deg);
+  right: 5px;
+}
+/* line 353, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.hamburger .two {
+  position: relative;
+}
+
+/* line 359, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.menu {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background-color: #2ecc71;
+  z-index: 1000;
+  text-align: center;
+  color: white;
+  -webkit-transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+  -moz-transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+  -o-transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+  transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+}
+/* line 374, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.menu h1 a {
+  font-size: 67px !important;
+  line-height: 167px !important;
+  margin: 67px 0 0 0 !important;
+  text-decoration: none;
+  color: white !important;
+}
+/* line 380, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.menu h1 a:hover {
+  border: 10px solid #27ae60;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+/* line 394, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.menu_slide {
+  left: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+  -moz-transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+  -o-transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+  transition: all 500ms cubic-bezier(0.965, 0.24, 1, 0.81);
+}
+
+/* line 402, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+  /* line 411, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  a {
+    font-size: 16px !important;
+    color: #212121 !important;
+  }
+
+  /* line 417, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  i {
+    font-size: 20px !important;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+
+  /* line 425, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  button {
+    font-size: 12px !important;
+  }
+
+  /* line 429, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  input {
+    font-size: 12px !important;
+  }
+
+  /* line 433, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  textarea {
+    font-size: 12px !important;
+  }
+
+  /* line 437, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 12px 0 0 0;
+  }
+
+  /* line 443, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  h1 {
+    font-size: 47px;
+    line-height: 47px;
+    margin: 47px 0 0 0;
+  }
+
+  /* line 449, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  h2 {
+    font-size: 31px;
+    line-height: 31px;
+    margin: 31px 0 0 0;
+  }
+
+  /* line 455, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 465, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  .side_left {
+    width: 100vw;
+    position: relative;
+    height: 50vh;
+  }
+
+  /* line 471, /Users/haaruun/Documents/MainSite/NewSitecopy/app/assets/stylesheets/application.css.scss */
+  .side_right {
+    width: 100vw;
+  }
+}

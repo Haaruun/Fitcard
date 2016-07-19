@@ -2,20 +2,23 @@
 <html>
 <head>	
   <title>FitCard | <%= @page_title || "Welcome" %></title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=0.75, minimum-scale=0.75, maximum-scale=0.75">
+
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
    <%= favicon_link_tag 'favicon.ico' %>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
 </head>
 <body>
 
-	<button class="hamburger">
+	<div class="hamburger">
 		<div class ="ham_one"></div>
 		<div class ="ham_two"></div>
 		<div class ="ham_three"></div>
-	</button>
+	</div>
 
 
 	<div class="menu">

@@ -31,8 +31,8 @@ var sweetAlertConfirmConfig = {
 };
 
 
-$(document).ready(function(){
-  $('.side_right_box:odd').css('background-color', '#D32F2F');
+// $(document).ready(function(){
+//   $('.side_right_box:odd').css('background-color', '#D32F2F');
 
-  $('.side_right_box:even').css('background-color', '#F44336');
-});
+//   $('.side_right_box:even').css('background-color', '#F44336');
+// });

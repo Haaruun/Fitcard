@@ -1,5 +1,6 @@
 $(function(){
-	$('.hamburger').click(function(){
+	$('.hamburger').click(function(e){
+		e.preventDefault();
 		$('.ham_one').toggleClass('one');
 		$('.ham_two').toggleClass('two');
 		$('.ham_three').toggleClass('three');

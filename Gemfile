@@ -22,9 +22,6 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'sweet-alert'
-
-gem 'sweet-alert-confirm'
 
 gem 'friendly_id', '~> 5.1.0'
 

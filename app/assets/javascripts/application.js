@@ -13,22 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require social-share-button
-//= require sweet-alert
-//= require sweet-alert-confirm
 //= require jquery.turbolinks
 //= require turbolinks
 //= require_tree .
 
-
-var sweetAlertConfirmConfig = {
-  title: 'Are you sure person man?',
-  type: 'warning',
-  showCancelButton: true,
-  cancelButtonText: 'No way',
-  confirmButtonColor: 'green',
-  confirmButtonText: 'Ok',
-  text: 'This is a subtitle'
-};
 
 
 // $(document).ready(function(){

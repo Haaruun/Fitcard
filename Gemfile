@@ -39,3 +39,7 @@ gem 'solidus_auth_devise'
 gem 'pg', group: :production
 
 gem 'rails_12factor', group: :production
+
+
+gem "paperclip"
+gem 'aws-sdk', '< 2.0'

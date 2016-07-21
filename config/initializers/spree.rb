@@ -51,6 +51,13 @@ Spree.config do |config|
   # )
 end
 
+# Spree.config do |config|
+#   config.use_s3 = true
+#   config.s3_bucket = '<bucket>'
+#   config.s3_access_key = "<key>"
+#   config.s3_secret = "<secret>"
+# end
+
 Spree::Frontend::Config.configure do |config|
   config.use_static_preferences!
 

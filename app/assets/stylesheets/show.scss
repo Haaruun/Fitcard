@@ -1,5 +1,6 @@
-$darkred: #d14848; 
-$lightred: #c73330;
+$darkred: #27ae60; 
+$lightred: #2ecc71;
+
 
 .side_right{
 	.main_content{
@@ -303,23 +304,23 @@ h3{
 
 
 
-.social-share-button .social-share-button-facebook::before {
+.social-share-button .ssb-facebook::before {
 	content:  "\f09a" !important;
 	    font-family: FontAwesome;
 
 }
-.social-share-button .social-share-button-tumblr::before{
+.social-share-button .ssb-tumblr::before{
       content:  "\f173" !important;
           font-family: FontAwesome;
 
 }
 
-.social-share-button .social-share-button-twitter::before{
+.social-share-button .ssb-twitter::before{
     content:  "\f099" !important;
         font-family: FontAwesome;
 
 }
-.social-share-button .social-share-button-google_plus::before{
+.social-share-button .ssb-google_plus::before{
     content:  "\f0d5" !important;
     font-family: FontAwesome;
 }

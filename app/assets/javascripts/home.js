@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 	$('.hamburger').click(function(){
 		$('.ham_one').toggleClass('one');
 		$('.ham_two').toggleClass('two');

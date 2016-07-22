@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 
 		$('.link').click(function(){
-		 location.reload().delay(2000);
+		 location.reload().delay(2950);
 	
 	});
 });

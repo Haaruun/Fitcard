@@ -35,9 +35,9 @@
   </div>
 <div class="next_prev">
   <% if @post.id == 1 %>
-    <div class ="change backward"><%= link_to("✕", {:controller => 'posts', :action => 'index'}) %> </div>
+    <div class ="change backward link"><%= link_to("✕", {:controller => 'posts', :action => 'index'}) %> </div>
   <% else %>
-    <div class ="change backward"><%= link_to "<", @post.previous %> </div>
+    <div class ="change backward link"><%= link_to "<", @post.previous %> </div>
 
 
       <% end %>

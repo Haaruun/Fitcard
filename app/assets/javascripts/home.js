@@ -7,4 +7,9 @@ $(document).ready(function(){
 		$('.menu').toggleClass('menu_slide');
 
 	});
+
+		$('.link').click(function(){
+		 location.reload().delay(2000);
+	
+	});
 });
